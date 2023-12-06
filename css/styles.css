@@ -80,7 +80,6 @@ img {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding-top: 24px;
     margin-right: 76px;
     
 }
@@ -102,14 +101,22 @@ img {
     color: #404bbf;
 }
 
+.nav-list-studio {
+    padding: 24px 0;
+}
+
 .nav-list-studio:active {
     text-decoration: underline;
 }
 
 .header-contacts { 
+    font-style: normal;
+}
+
+.contacts-list {
     display: flex;
     flex-direction: row;
-    font-style: normal;
+    gap: 40px;
 }
 
 .contacts-item {
