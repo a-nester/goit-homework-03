@@ -49,11 +49,15 @@ img {
     
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc
+}
+
 .container-nav {
     display: flex;
     flex-direction: row;
     margin-left: 156px;
-    
+    align-items: center;
 } 
 .logo {
     font-family: "Raleway", sans-serif;
