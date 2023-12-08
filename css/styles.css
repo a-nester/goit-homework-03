@@ -194,12 +194,17 @@ color: #434455;
 }
 
 /* Section2. Benefits */
+.benefits {
+    padding: 120px 0;
+}
 .header-list {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 32px;
 }
 
 .benefits-list {
@@ -213,10 +218,17 @@ color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    /* width: 264px; */
+    padding-bottom: 32px;
+    
 }
 
+.benefits-list-item {
+    width: 264px;
+}
 /* Section Our Team */
+.ourteam .container {
+    display: block;
+}
 .ourteam {
     background-color: #F4F4FD;
     
@@ -232,8 +244,21 @@ color: #434455;
     text-transform: capitalize;
 }
 
+.ourteam .header-second {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24;
+}
+
 .team-item {
     background-color: #FFFFFF;
+    display: block;
+    justify-content: center;
 }
 
 /* Portfolio section */
