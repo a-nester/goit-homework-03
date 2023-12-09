@@ -35,6 +35,20 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* header styles */
@@ -204,7 +218,7 @@ color: #434455;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 .benefits-list {
@@ -226,12 +240,13 @@ color: #434455;
     width: 264px;
 }
 /* Section Our Team */
+
+.ourteam {
+    background-color: #F4F4FD; 
+}
+
 .ourteam .container {
     display: block;
-}
-.ourteam {
-    background-color: #F4F4FD;
-    
 }
 
 .header-second {
@@ -242,28 +257,69 @@ color: #434455;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .ourteam .header-second {
     padding-top: 120px;
-    padding-bottom: 72px;
+    /* padding-bottom: 72px; */
 }
 
 .team-list {
     display: flex;
     justify-content: space-between;
     gap: 24;
+    padding-bottom: 120px;
 }
 
 .team-item {
     background-color: #FFFFFF;
     display: block;
-    justify-content: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72) / 4);
+}
+
+.card-text {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
 }
 
 /* Portfolio section */
 .portfolio {
-    background-color: #F4F4FD;
+    background-color: #FFF;
+}
+
+.portfolio .container{
+    display: block;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;   
+}
+
+.portfolio-list-item {
+    display: block;
+    border: 1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-item .header-list {
+    padding-left: 16px;
+}
+
+.portfolio-list-item .benefits-text {
+    padding-left: 16px;
+}
+
+.portfolio-list-item .card-text {
+    text-align: start;
 }
 
 .footer {
