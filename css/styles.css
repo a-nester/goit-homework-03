@@ -294,7 +294,7 @@ color: #434455;
 .portfolio .container{
     display: block;
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 96px;
 }
 
 .portfolio-list {
@@ -321,6 +321,8 @@ color: #434455;
 .portfolio-list-item .card-text {
     text-align: start;
 }
+
+/* Footer */
 
 .footer {
     background-color: #2E2F42;
